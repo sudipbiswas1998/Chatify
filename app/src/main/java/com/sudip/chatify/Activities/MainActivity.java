@@ -1,4 +1,4 @@
-package com.sudip.chatify;
+package com.sudip.chatify.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,9 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.sudip.chatify.R;
+import com.sudip.chatify.Models.User;
+import com.sudip.chatify.Adapters.UsersAdapter;
 import com.sudip.chatify.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;

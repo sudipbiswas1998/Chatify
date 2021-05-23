@@ -1,4 +1,4 @@
-package com.sudip.chatify;
+package com.sudip.chatify.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.sudip.chatify.Activities.ChatActivity;
+import com.sudip.chatify.R;
+import com.sudip.chatify.Models.User;
 import com.sudip.chatify.databinding.RowConversationBinding;
 
 import java.util.ArrayList;
@@ -42,7 +45,10 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UsersViewHol
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                context.startActivity(new Intent(context, ChatActivity.class));
+                Intent intent = new Intent(context, ChatActivity.class);
+                intent.putExtra("name", user.getName());
+                intent.putExtra("uid", user.getUid());
+                context.startActivity(intent);
             }
         });
     }

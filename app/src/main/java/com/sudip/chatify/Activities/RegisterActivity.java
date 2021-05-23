@@ -1,4 +1,4 @@
-package com.sudip.chatify;
+package com.sudip.chatify.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,7 +14,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,9 +26,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.sudip.chatify.Models.User;
 import com.sudip.chatify.databinding.ActivityRegisterBinding;
-
-import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -104,7 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
                                             }
                                         });
                                     } else {
-                                        dialog.dismiss();
+                                        //dialog.dismiss();
                                         Toast.makeText(RegisterActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
                                         Log.d("msg", "createUserWithEmail:failure", task.getException());
                                         Log.d("email", binding.regEmail.getText().toString());

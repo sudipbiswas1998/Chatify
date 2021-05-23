@@ -1,4 +1,4 @@
-package com.sudip.chatify;
+package com.sudip.chatify.Models;
 
 public class User {
      private String uid, name, emailAddress, profileImage;

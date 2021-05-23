@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:hapticFeedbackEnabled="true"
-    tools:context=".RegisterActivity">
+    tools:context=".Activities.RegisterActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"

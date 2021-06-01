@@ -24,7 +24,7 @@ public class MessagesAdapter extends RecyclerView.Adapter {
     ArrayList<Message> messages;
 
     final int ITEM_SENT = 1;
-    final int ITEM_RECEIVE = 2 ;
+    final int ITEM_RECEIVE = 2;
 
     public MessagesAdapter(Context context, ArrayList<Message> messages){
         this.context = context;

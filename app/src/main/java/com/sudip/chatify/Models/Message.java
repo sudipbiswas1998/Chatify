@@ -3,7 +3,6 @@ package com.sudip.chatify.Models;
 public class Message {
     private String massageId, message, senderId;
     private long timestamp;
-    private int feeling;
 
     public Message() {
     }
@@ -46,11 +45,4 @@ public class Message {
         this.timestamp = timestamp;
     }
 
-    public int getFeeling() {
-        return feeling;
-    }
-
-    public void setFeeling(int feeling) {
-        this.feeling = feeling;
-    }
 }

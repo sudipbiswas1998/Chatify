@@ -61,7 +61,7 @@ public class ChatActivity extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         messages.clear();
                         for (DataSnapshot snapshot1 : snapshot.getChildren()){
-                            Message message = snapshot.getValue(Message.class);
+                            Message message = snapshot1.getValue(Message.class);
                             messages.add(message);
                         }
 
